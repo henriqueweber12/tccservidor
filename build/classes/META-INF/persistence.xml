@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="VendadeCarros">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:jboss/VendadeCarros</jta-data-source>
+		<class>br.henrique.model.AbstractEntityImpl</class>
+		<class>br.henrique.model.Usuario</class>
+		<class>br.henrique.model.OrcamentoVeiculoAdicional</class>
+		<class>br.henrique.model.Orcamentos</class>
+		<class>br.henrique.model.Adicionais</class>
+		<class>br.henrique.model.Veiculo</class>
+		<class>br.henrique.model.VeiculoAdicionais</class>
+		<class>br.henrique.model.FormaPagamento</class>
+		<properties>
+		<property name="hibernate.hbm2ddl.auto" value="update"/>
+		</properties>
+	</persistence-unit>
+</persistence>
